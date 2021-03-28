@@ -1,0 +1,18 @@
+tags:
+  - account
+summary: "유저 생성"
+description: "유저 생성"
+responses:
+  "200":
+    description: "유저 생성 성공"
+    content:
+      application/json:
+        schemas:
+          $ref: "#/components/schemas/account"
+requestBody:
+  content:
+    application/json:
+      schema:
+        $ref: "#/components/schemas/account"
+  description: "New account object"
+  required: true
