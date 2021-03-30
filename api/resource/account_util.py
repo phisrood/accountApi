@@ -30,10 +30,10 @@ def send_email(account):
     s.starttls()
     # 로그인 인증
     # s.login('지메일계정','앱비밀번호')
-    s.login('kymDev0124@gmail.com', 'qkcnlldrijkkdvqd')
+    s.login('', '')
     # 메일 보내기
     # s.sendmail('보내는메일주소','받는메일주소',메세지내용)
-    s.sendmail('kymDev0124@gmail.com', account.email, msg.as_string().encode("UTF-8"))
+    s.sendmail('', account.email, msg.as_string().encode("UTF-8"))
     print('메일보내기 성공')
     # 세션종료
     s.quit()
